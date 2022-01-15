@@ -8,14 +8,14 @@ namespace _string_
         static int Main(string[] args)
         {
             string? SstringS = "string";
-            Console.Write("Welcome to string!\nEnter a word or a number(for further number analysis use the intreger program that's in progress) to begin: ");
+            Console.Write("Welcome to string!\nEnter a word to begin: ");
             while (SstringS != null)
             {
                 int i = 0;
                 SstringS = Console.ReadLine();
                 if(i != 0)
                 {
-                    Console.WriteLine("Enter a word or number: ");
+                    Console.WriteLine("Enter a word: ");
                 }
                 i++;
                 #pragma warning disable CS8604
@@ -29,7 +29,7 @@ namespace _string_
         {
             Word = Word.ToLower();
             Console.WriteLine("Length: " + Word.Length);
-            Console.Write("This are the letter or numbers its made from: ");
+            Console.Write("This are the letters its made from: ");
             char[] word = Word.ToCharArray();
             for (int i = 0; i < Word.Length; i++)
             {
@@ -44,10 +44,10 @@ namespace _string_
                 }
                 
             }
-            Console.Write("In alphabetical or in ascenting order: ");
+            Console.Write("In alphabetical order: ");
             Array.Sort(word);
             Console.WriteLine(word);
-            Console.Write("In reverse alphabetical or descenting yorder: ");
+            Console.Write("In reverse alphabetical: ");
             for (int i = word.Length - 1; i >= 0; i--)
             {
                 if (i != 0)
@@ -71,7 +71,6 @@ namespace _string_
                     Console.WriteLine(Word[i]);
                 }
             }
-            Console.Write("TheString");
             Environment.Exit(0);
         }
     }
